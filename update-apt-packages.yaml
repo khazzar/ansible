@@ -2,7 +2,7 @@
 - hosts: all
 
  become: true
-  become_user: khazzar
+ become_user: khazzar
   
   tasks:
     - name: Update and upgrade packages 
