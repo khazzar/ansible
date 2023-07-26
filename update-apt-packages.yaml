@@ -1,8 +1,8 @@
 ---
 - hosts: all
 
-  become: true
-  sudo: True
+ become: true
+  become_user: khazzar
   
   tasks:
     - name: Update and upgrade packages 
