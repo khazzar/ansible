@@ -1,9 +1,7 @@
 ---
 - hosts: all
-
- become: true
- become_user: khazzar
-  
+  become: true
+  become_method: enable  
   tasks:
     - name: Update and upgrade packages 
       ansible.builtin.apt:
