@@ -3,7 +3,8 @@
 
   become: true
   tasks:
-    - name: update apt packages
-      apt:
-        upgrade: yes
+    - name: Update and upgrade packages 
+      ansible.builtin.apt:
         update_cache: yes
+        upgrade: yes
+        autoremove: yes
